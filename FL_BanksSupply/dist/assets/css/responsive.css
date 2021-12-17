@@ -1,0 +1,355 @@
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type='text'],
+.box input[type='password'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type='text']:focus,
+.box input[type='password']:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type='submit'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type='submit']:hover {
+  background: #2ecc71;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+model-viewer {
+  --poster-color: transparent;
+}
+
+model-viewer#reveal {
+  --poster-color: transparent;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.modelViewer.poster {
+  width: 100%;
+  height: 100%;
+}
+
+.ar-button {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  right: 0px;
+  top: 0px;
+  margin: 2.6em;
+}
+
+.grid-container {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-gap: 0px;
+}
+
+.controls {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  left: 0px;
+  bottom: 0px;
+  margin: 2em;
+}
+
+.premluxlogo {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  left: 0px;
+  top: 0px;
+  margin: 2em;
+}
+
+.pimaklogo {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  left: 0px;
+  top: 0px;
+  margin: 2em;
+}
+
+.huxellogo {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  left: 0px;
+  top: 0px;
+  margin: 2em;
+}
+
+.myDiv {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  left: 0px;
+  bottom: 0px;
+  margin: 2em;
+}
+
+.a {
+  grid-column: 1 / 5;
+  grid-row: 1 / 7;
+}
+
+@media (max-width: 629px) {
+  img#optionalstuff {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .a {
+    grid-column: 1 / 8;
+    grid-row: 1 / 7;
+  }
+  .b {
+    grid-column: 8 / 13;
+    grid-row: 1 / 4;
+  }
+  .c {
+    grid-column: 8 / 13;
+    grid-row: 4 / 7;
+  }
+}
+
+@media (max-width: 480px) {
+  .a {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+  }
+  .b {
+    grid-column: 1 / 7;
+    grid-row: 5 / 7;
+  }
+  .c {
+    grid-column: 7 / 13;
+    grid-row: 5 / 7;
+  }
+
+  .pimaklogo {
+    max-height: 50px;
+    max-width: 90px;
+  }
+}
+
+<!--MODAL AYARLARI-- > * {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  padding: 0em;
+}
+
+.modal__content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.842);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0em;
+  border-radius: 0em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+#modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal:target .modal__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close {
+  color: #ffffff;
+  font-size: 4em;
+  position: absolute;
+  top: 0.4em;
+  right: 0.7em;
+}
+
+.modal__heading {
+  color: rgb(255, 255, 255);
+  margin-bottom: 1em;
+}
+
+.modal__paragraph {
+  line-height: 2em;
+  color: rgb(255, 255, 255);
+  margin: 2em;
+}
+
+.ariconbeyaz {
+  margin-top: 7em;
+}
+
+.lambaqr {
+  margin-top: 7em;
+}
+
+.huxellogobeyaz {
+  margin-top: 7em;
+}
+
+.modal-open {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  right: 0px;
+  top: 0px;
+  margin: 1.8em;
+}
+.modal-open2 {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  position: absolute;
+
+  left: 0px;
+  bottom: 0px;
+  margin: 1.8em;
+}
+
+.modal2 {
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  padding: 0em;
+}
+
+.modal__content2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.842);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0em;
+  border-radius: 0em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+#modal2:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal2:target .modal__content2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close2 {
+  color: #ffffff;
+  font-size: 4em;
+  position: absolute;
+  top: 0.4em;
+  right: 0.7em;
+}
+
+.modal__heading2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 1em;
+}
+
+.modal__paragraph2 {
+  line-height: 2em;
+  color: rgb(255, 255, 255);
+  margin: 2em;
+}
+
+.ariconbeyaz {
+  margin-top: 2em;
+}

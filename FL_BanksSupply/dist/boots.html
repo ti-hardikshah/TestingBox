@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Model Viewer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link type="text/css" href="assets/css/styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+  </head>
+
+  <body>
+      <model-viewer
+        class="a"
+        src="assets/model/Hiking_Boots2.glb"
+        ios-src="assets/model/Hiking_Boots2.usdz"
+        id="Hiking_Boots"
+        poster="assets/img/Boot_.webp"
+        environment-image="neutral"
+        loading="auto"
+        ar-modes="webxr scene-viewer quick-look"
+        camera-orbit="120deg 60deg auto"
+        camera-controls
+        ar
+        ar-placement=""
+        exposure="1"
+        alt="assets"
+        quick-look-browsers="safari chrome"
+        ar-status="not-presenting"
+        autoplay
+      >
+       <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="assets/img/ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="assets/js/script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+      <script type="module" src="https://unpkg.com/@google/model-viewer@1.8.0/dist/model-viewer.min.js"></script>
+  </body>
+</html>

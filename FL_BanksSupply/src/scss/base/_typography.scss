@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Buckwheat TC';
+  src: url('#{$font-path}/BuckwheatTC-Regular.eot');
+  src: url('#{$font-path}/BuckwheatTC-Regular.eot?#iefix') format('embedded-opentype'), url('#{$font-path}/BuckwheatTC-Regular.woff2') format('woff2'),
+    url('#{$font-path}/BuckwheatTC-Regular.woff') format('woff'), url('#{$font-path}/BuckwheatTC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('#{$font-path}/Larsseit-Bold.eot');
+  src: url('#{$font-path}/Larsseit-Bold.eot?#iefix') format('embedded-opentype'), url('#{$font-path}/Larsseit-Bold.woff2') format('woff2'),
+    url('#{$font-path}/Larsseit-Bold.woff') format('woff'), url('#{$font-path}/Larsseit-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('#{$font-path}/Larsseit.eot');
+  src: url('#{$font-path}/Larsseit.eot?#iefix') format('embedded-opentype'), url('#{$font-path}/Larsseit.woff2') format('woff2'),
+    url('#{$font-path}/Larsseit.woff') format('woff'), url('#{$font-path}/Larsseit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

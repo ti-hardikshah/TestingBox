@@ -1,0 +1,18 @@
+:root {
+  --base-font: 'Helvetica', sans-serif;
+  --crillee: 'Crillee Italic Std', sans-serif;
+  --base-color: #526472;
+  --brand-color: #8bc53f;
+  font-size: 16px;
+}
+@import './utilities/_variables.scss';
+@import './base/typography';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './base/reset';
+
+@import './components/header';
+@import './components/buttons';

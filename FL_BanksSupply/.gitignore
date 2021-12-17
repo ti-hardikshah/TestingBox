@@ -1,0 +1,4 @@
+dist-back
+out
+*.DS_Store
+node_modules

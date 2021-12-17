@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Model Viewer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="https://unpkg.com/intersection-observer/intersection-observer.js"></script>
+    <script src="https://unpkg.com/resize-observer-polyfill/dist/ResizeObserver.js"></script>
+    <script src="https://unpkg.com/fullscreen-polyfill/dist/fullscreen.polyfill.js"></script>
+    <script src="https://unpkg.com/focus-visible/dist/focus-visible.js" defer></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+  </head>
+
+<body>
+  
+  <div class="grid-container">
+    <model-viewer class="a" 
+    src="../model/Camp_Chair.glb"
+    ios-src="../model/Camp_Chair.usdz"
+    id="camp_chair"
+    environment-image
+    loading="auto"
+    ar ar-modes="webxr scene-viewer quick-look" 
+    camera-orbit="-45deg 45deg auto"
+    camera-controls
+    ar ar-placement=""
+    exposure="1"
+    alt="assets" 
+    quick-look-browsers="safari chrome" 
+    ar-status="not-presenting" 
+    autoplay>
+    <input slot="ar-button" class="ar-button" value="submit" type="image" src="../img/aricon_Black.png" width="30px" height="30px"> 
+    </model-viewer>
+
+  </div>
+</body></html>

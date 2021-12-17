@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="Banks" />
+    <!-- og tags -->
+    <meta property="og:site_name" content="Banks" />
+    <meta property="og:description" content="Banks" />
+    <meta property="og:url" content="Banks" />
+    <meta property="og:title" content="Banks" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>Banks</title>
+
+    <script defer="defer" src="assets/js/bundle.js"></script>
+    <link href="assets/css/bundle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Model Viwer -->
+    <!-- <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script> -->
+    <!-- End  -->
+
+    <style>
+      model-viewer::part(default-progress-mask) {
+      display: none;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="absolute top-0 left-0 w-full sm:py-7 py-4 header md:px-2 z-50">
+      <div class="container max-w-full flex">
+        <div class="sm:w-auto w-28"><img src="assets/img/logo.svg" alt="banks" /></div>
+        <div class="ml-auto flex sm:space-x-12 space-x-3 items-center">
+          <a href="https://fishermenlabs.com/" class="text-white/70 sm:text-lg text-sm hover:text-white transition duration-300">Go to Fishermen Labs</a>
+          
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    
+
+    <!-- MAIN -->
+    <main class="overflow-hidden">
+      <!-- BANNER -->
+      <section class="h-screen">
+        <img src="assets/img/banner.jpg" class="w-full h-full object-cover" alt="" />
+        <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+          <div class="container text-center">
+            <h2
+              class="
+                font-buckwheat
+                text-white
+                lg:text-8.5xl
+                sm:text-7.5xl
+                text-5xl
+                lg:max-w-2xl
+                sm:max-w-lg
+                max-w-xs
+                mx-auto
+                leading-none
+                uppercase
+                -mt-44
+              "
+            >GEAR DESIGNED TO KEEP UP WITH YOU</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="lg:py-32 sm:py-24 py-10">
+        <div class="container">
+          <div class="lg:-mx-10 sm:flex items-center">
+            <div class="lg:px-10 sm:w-5/12 text-center sm:text-left">
+              <h2 class="lg:text-8.5xl sm:text-6xl text-5xl uppercase font-buckwheat mb-5">Take our gear for a spin</h2>
+              <p class="sm:max-w-[360px]">Check out our equipment without leaving your couch by viewing it in Augmented Reality.</p>
+            </div>
+            <div class="lg:px-10 sm:w-7/12 mt-8 sm:mt-0">
+              <img src="assets/img/img-1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="md:pt-14 pt-8 md:pb-28 pb-16">
+        <header class="px-3.6 text-center mb-3">
+          <h3 class="lg:text-5.5xl sm:text-4.8xl text-3.2xl font-bold mb-4">The Essentials</h3>
+          <h5>Durable and transportable is our M.O.</h5>
+        </header>
+        <div class="sm:overflow-auto sm:px-0 px-3.6">
+          <div class="sm:flex sm:justify-center sm:space-x-8 sm:min-w-[1000px]">
+            <div class="bg-white shadow-lg rounded-lg xl:w-[425px] sm:w-80 mt-10 p-5 flex flex-col">
+              <div class="flex justify-center">
+                <model-viewer style="height: 500px;" 
+                      src="assets/model/Kayak.glb"
+                      ios-src="assets/model/Kayak.usdz"
+                      environment-image="neutral" 
+                      id="kayak"
+                      environment-image="neutral"
+                      poster="assets/img/poster_ex.webp"
+                      loading= "auto"
+                      reveal="interaction"
+                      ar ar-modes="webxr scene-viewer quick-look" 
+                      camera-orbit="45deg 45deg"
+                      camera-controls
+                      ar ar-placement=""
+                      exposure="1"
+                      alt="assets" 
+                      quick-look-browsers="safari chrome" 
+                      ar-status="not-presenting" 
+                      >
+
+                      <!-- <model-viewer style="height: 500px;"  id="kayak" loading="auto" camera-controls auto-rotate poster="assets/img/poster_ex.webp" src="assets/model/Kayak.glb" alt="A 3D model of a shishkebab"></model-viewer> -->
+
+                      <div style="margin-top: 430px;" class="flex justify-center lg:hidden" slot="ar-button">
+                        <button class="button rounded-full text-base inline-flex items-center space-x-3 px-6 py-2.5">
+                          <img src="assets/img/aricon_Black.png" width="23" height="26" alt="">
+                          <span>View in AR</span>
+                        </button>
+                      </div>
+                  </model-viewer>
+              </div>
+              <div class="mt-auto pt-5">
+                <h2 class="xl:text-3.5xl sm:text-2.8xl text-2xl font-bold sm:mb-8 mb-3 text-center">Eddy 2S Kayak</h2>
+                <div class="flex lg:justify-start justify-center items-center">
+                  <div class="text-4.5xl text-[#AD745B] font-buckwheat">$299.99</div>
+                  <div class="ml-auto hidden lg:block w-20">
+                    <div class="qr-block">
+                      <img src="assets/img/qr/qr-kayak.svg" alt="qr code" />
+                      <span
+                        >Scan to<br />
+                        View in AR</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg xl:w-[425px] sm:w-80 mt-10 p-5 flex flex-col">
+              <div class="flex justify-center">
+                <model-viewer style="height: 500px;" 
+                        src="assets/model/Hiking_Boots2.glb"
+                        ios-src="assets/model/Hiking_Boots2.usdz"
+                        id="Hiking_Boots"
+                        environment-image
+                        poster="assets/img/Boot_.webp" 
+                        loading= "auto"
+                        reveal="interaction"
+                        ar ar-modes="webxr scene-viewer quick-look" 
+                        camera-orbit="120deg 60deg auto"
+                        camera-controls
+                        ar ar-placement=""
+                        exposure="1"
+                        alt="assets" 
+                        quick-look-browsers="safari chrome" 
+                        ar-status="not-presenting" 
+                        >
+
+                        <div style="margin-top: 430px;" class="flex justify-center lg:hidden" slot="ar-button">
+                          <button class="button rounded-full text-base inline-flex items-center space-x-3 px-6 py-2.5">
+                            <img src="assets/img/aricon_Black.png" width="23" height="26" alt="">
+                            <span>View in AR</span>
+                          </button>
+                        </div>
+                  </model-viewer>
+
+              </div>
+              <div class="mt-auto pt-5">
+                <h2 class="xl:text-3.5xl sm:text-2.8xl text-2xl font-bold sm:mb-8 mb-3 text-center">Trek Hiking Boots</h2>
+                <div class="flex items-center lg:justify-start justify-center">
+                  <div class="text-4.5xl text-[#AD745B] font-buckwheat">$89.99</div>
+                  <div class="ml-auto hidden lg:block w-20">
+                    <div class="qr-block">
+                      <img src="assets/img/qr/qr-hiking-boot.svg" alt="qr code" />
+                      <span
+                        >Scan to<br />
+                        View in AR</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg xl:w-[425px] sm:w-80 mt-10 p-5 flex flex-col">
+              <div class="flex justify-center">
+                <model-viewer style="height: 500px;" 
+                      src="assets/model/Camp_Chair_.glb"
+                      ios-src="assets/model/Camp_Chair_.usdz"
+                      id="camp_chair"
+                      environment-image
+                      poster="assets/img/Poster_CampChair.webp" 
+                      loading= "auto"
+                      reveal="interaction" 
+                      ar ar-modes="webxr scene-viewer quick-look" 
+                      camera-orbit="-45deg 45deg auto"
+                      camera-controls
+                      ar ar-placement=""
+                      exposure="1"
+                      alt="assets" 
+                      quick-look-browsers="safari chrome" 
+                      ar-status="not-presenting" 
+                      >
+
+                      <div style="margin-top: 430px;" class="flex justify-center lg:hidden" slot="ar-button">
+                        <button class="button rounded-full text-base inline-flex items-center space-x-3 px-6 py-2.5">
+                          <img src="assets/img/aricon_Black.png" width="23" height="26" alt="">
+                          <span>View in AR</span>
+                        </button>
+                      </div>
+                      
+                </model-viewer>
+              </div>
+              <div class="mt-auto pt-5">
+                <h2 class="xl:text-3.5xl sm:text-2.8xl text-2xl font-bold sm:mb-8 mb-3 text-center">Banks Portable Chair</h2>
+                <div class="flex items-center lg:justify-start justify-center">
+                  <div class="text-4.5xl text-[#AD745B] font-buckwheat">$64.99</div>
+                  <div class="ml-auto hidden lg:block w-20">
+                    <div class="qr-block">
+                      <img src="assets/img/qr/qr-chair.svg" alt="qr code" />
+                      <span
+                        >Scan to<br />
+                        View in AR</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-white">
+        <div class="container">
+          <h3 class="lg:text-5.5xl sm:text-4.8xl text-3.5xl font-bold mb-4 text-center">Find the backpack that's right for you</h3>
+          <div class="sm:flex -mx-10 sm:justify-center">
+            <div class="px-10 sm:w-1/2 mt-14">
+              <div class="flex justify-center">
+                <model-viewer
+                  style="height: 500px"
+                  src="assets/model/Backpack_Blue.glb"
+                  ios-src="assets/model/Backpack_Blue.usdz"
+                  id="Backpack_Blue"
+                  environment-image="assets/img/cannon_1k.hdr"
+                  poster="assets/img/Poster_BlueBackpack.webp"
+                  loading= "auto"
+                  reveal="interaction" 
+                  ar
+                  ar-modes="webxr scene-viewer quick-look"
+                  camera-orbit="-30deg 90deg auto"
+                  camera-controls
+                  ar
+                  ar-placement=""
+                  exposure="1.3"
+                  alt="assets"
+                  quick-look-browsers="safari chrome"
+                  ar-status="not-presenting"
+                >
+                  <div style="margin-top: 430px" class="flex justify-center lg:hidden" slot="ar-button">
+                    <button class="button rounded-full text-base inline-flex items-center space-x-3 px-6 py-2.5">
+                      <img src="assets/img/aricon_Black.png" width="23" height="26" alt="" />
+                      <span>View in AR</span>
+                    </button>
+                  </div>
+                </model-viewer>
+              </div>
+              <h2 class="lg:text-3.5xl text-2xl font-bold lg:mb-8 mb-3 mt-5 text-center">Haul 65 - $140</h2>
+              <div class="hidden lg:flex items-start justify-center">
+                <div class="qr-block w-20">
+                  <img src="assets/img/qr/qr-blue-bag.svg" alt="qr code" />
+                  <span
+                    >Scan to<br />
+                    View in AR</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="px-10 sm:w-1/2 sm:flex sm:justify-center mt-14">
+              <div>
+                <div class="flex justify-center">
+                  <model-viewer style="height: 500px;" 
+                    src="assets/model/Backpack_Gray.glb"
+                    ios-src="assets/model/Backpack_Gray.usdz"
+                    id="Backpack_Gray"
+                    environment-image
+                    poster="assets/img/Poster_GrayBackpack.webp" 
+                    loading= "auto"
+                    reveal="interaction"
+                    camera-orbit="-40deg 75deg auto"
+                    ar ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls
+                    ar ar-placement=""
+                    exposure="1"
+                    alt="assets" 
+                    quick-look-browsers="safari chrome" 
+                    ar-status="not-presenting" 
+                    >
+
+                    <div style="margin-top: 430px;" class="flex justify-center lg:hidden" slot="ar-button">
+                      <button class="button rounded-full text-base inline-flex items-center space-x-3 px-6 py-2.5">
+                        <img src="assets/img/aricon_Black.png" width="23" height="26" alt="">
+                        <span>View in AR</span>
+                      </button>
+                    </div>
+                </div>
+                <h2 class="lg:text-3.5xl text-2xl font-bold lg:mb-8 mb-3 mt-5 text-center">MaxPack 85 - $210</h2>
+                <div class="hidden lg:flex items-start justify-center">
+                  <div class="qr-block w-20">
+                    <img src="assets/img/qr/qr-gray-bag.svg" alt="qr code" />
+                    <span
+                      >Scan to<br />
+                      View in AR</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN ENDs -->
+    <!-- FOOTER -->
+    <footer class="bg-black lg:py-10 py-7 md:px-3">
+      <div class="container max-w-full lg:flex lg:items-center">
+        <div class="sm:w-auto w-28">
+          <img src="assets/img/logo.svg" alt="" />
+        </div>
+        <div class="lg:w-96 mt-8 lg:mt-0 lg:max-w-full max-w-sm ml-auto mr-auto lg:mr-0">
+          <a href="https://fishermenlabs.com/ar-vr" class="bg-[#E8E2CF] font-medium rounded-full text-center py-7 w-full block px-10 lg:text-2xl text-xl text-black hover:bg-white transition duration-300"> See what AR can do for you </a>
+        </div>
+        
+        <div class="ml-auto flex lg:flex-col sm:flex-row flex-col lg:space-y-4 sm:space-y-0 space-y-5 lg:text-right lg:mt-0 mt-14">
+          <a href="https://fishermenlabs.com/" class="text-white group hover:text-[#BCD8B6] transition duration-200 lg:text-2xl sm:text-xl text-[15px] lg:order-first sm:order-1 lg:ml-0 sm:ml-auto"
+            ><span class="border-b-2 border-white/50 group-hover:border-[#BCD8B6] transition duration-300">Go to Fishermen Labs</span></a
+          >
+          <p class="text-white lg:text-2xl sm:text-xl text-[15px] lg:order-1 sm:order-[0]">© 2021 Banks Supply Company</p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <!-- Model viewr jss -->
+    <!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+   <!-- Old js used because new one has lots bug -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer@1.8.0/dist/model-viewer.min.js"></script>
+    <!-- Js loaded -->
+  
+  
+  </body>
+</html>

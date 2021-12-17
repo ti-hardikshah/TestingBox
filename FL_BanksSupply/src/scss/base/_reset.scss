@@ -1,0 +1,31 @@
+:root {
+  --base-font: 'Larsseit', sans-serif;
+  --font-buckwheat: 'Buckwheat TC', sans-serif;
+  --base-color: #000;
+  font-size: 16px;
+}
+
+.qr-block {
+  background-color: #e8e2cf;
+  text-align: center;
+  line-height: normal;
+  span {
+    font-size: 11px;
+    display: block;
+    line-height: 1;
+    padding: 0 2px 3px;
+  }
+}
+
+body {
+  font-family: var(--base-font);
+  color: var(--base-color);
+  font-size: 1rem;
+  background-color: #e8e2cf;
+  @media (min-width: 640px) {
+    font-size: 1.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.563rem;
+  }
+}
